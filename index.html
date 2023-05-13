@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,126 +8,342 @@
   <link href="style.css" rel="stylesheet" property="stylesheet">
   <title>Document</title>
 </head>
+
 <body>
-  <div class="theme">
-    <h2 class="title-theme">Линукс</h2>
-    <ul class="list">
-      <li class="item">
-        <div class="item-title">Линукс для начинающих от Гоша Дударь (12 уроков)</div>
-        <a class="item-link" href="https://www.youtube.com/playlist?list=PL0lO_mIqDDFUwVWvVitxG2oXA6a-Nq-Qq" target="_blank" alt="">
-          https://www.youtube.com/playlist?list=PL0lO_mIqDDFUwVWvVitxG2oXA6a-Nq-Qq
-        </a>
-      </li>
-      <li class="item">
-        <div class="item-title"></div>
-        <a class="item-link" href="" target="_blank" alt=""></a>
-      </li>
-      <li class="item">
-        <div class="item-title"></div>
-        <a class="item-link" href="" target="_blank" alt=""></a>
-      </li>
-    </ul>
+  <div class="tabs">
+    <input type="radio" name="tab-btn" id="tab-btn-1" value="" checked>
+    <label for="tab-btn-1">Konstantin</label>
+    <input type="radio" name="tab-btn" id="tab-btn-2" value="">
+    <label for="tab-btn-2">Eva</label>
+    <div id="konstantin">
+      <div class="tab-wrapper">
+
+        <div class="theme">
+          <h2 class="title-theme">React</h2>
+          <ul class="list">
+            <li class="item">
+              <div class="item-title">Organize React Components Better with Barrel Exports</div>
+              <a class="item-link" href="https://devsday.ru/blog/details/63451" target="_blank"
+                alt="">https://devsday.ru/blog/details/63451</a>
+              <div class="item-description">это паттерн импорта экпорта. в директории в любой где есть компоненты или
+                типы/интерфейсы должен находиться index.ts
+                если у вас один файл = один компонент (так и должно быть) то у вас всегда есть default export
+                если директории вложены то поднимаете на самый верхний уровень через index.ts
+              </div>
+            </li>
+            <li class="item">
+              <div class="item-title">Основы реакта (видео, 2 часа) RS-School</div>
+              <a class="item-link" href="https://www.youtube.com/watch?v=cJ9gGiH9UzA&t=1638s" target="_blank"
+                alt="">https://www.youtube.com/watch?v=cJ9gGiH9UzA&t=1638s</a>
+            </li>
+            <li class="item">
+              <div class="item-title">Курс по React, React Webpack (видео, 10 штук) RS-School</div>
+              <a class="item-link" href="https://www.youtube.com/playlist?list=PLzLiprpVuH8dDMEr41PJojOZutMcd_hA7"
+                target="_blank" alt="">https://www.youtube.com/playlist?list=PLzLiprpVuH8dDMEr41PJojOZutMcd_hA7</a>
+            </li>
+            <li class="item">
+              <div class="item-title">React Testing Tutorial (видео 53 штуки) Codevolution</div>
+              <a class="item-link" href="https://www.youtube.com/playlist?list=PLC3y8-rFHvwirqe1KHFCHJ0RqNuN61SJd"
+                target="_blank" alt="">https://www.youtube.com/playlist?list=PLC3y8-rFHvwirqe1KHFCHJ0RqNuN61SJd</a>
+            </li>
+            <li class="item">
+              <div class="item-title">Как работает с checkbox - React</div>
+              <a class="item-link" href="https://dev.to/collegewap/how-to-work-with-checkboxes-in-react-44bc"
+                target="_blank" alt="">https://dev.to/collegewap/how-to-work-with-checkboxes-in-react-44bc</a>
+              <div class="item-description">ref это связь с конкретном элементом DOM напрямую</div>
+            </li>
+            <li class="item">
+              <div class="item-title">Feature-Sliced Design (FSD)</div>
+              <a class="item-link" href="https://feature-sliced.design/ru/docs" target="_blank"
+                alt="">https://feature-sliced.design/ru/docs</a>
+              <div class="item-description">Feature-Sliced Design (FSD) — это архитектурная методология для
+                проектирования frontend-приложений. Проще говоря, это свод правил и соглашений по организации кода.
+                Главная цель методологии — сделать проект понятным и структурированным, особенно в условиях регулярного
+                изменения требований бизнеса.</div>
+            </li>
+            <li class="item">
+              <div class="item-title"></div>
+              <a class="item-link" href="" target="_blank" alt=""></a>
+            </li>
+            <li class="item">
+              <div class="item-title"></div>
+              <a class="item-link" href="" target="_blank" alt=""></a>
+            </li>
+            <li class="item">
+              <div class="item-title"></div>
+              <a class="item-link" href="" target="_blank" alt=""></a>
+            </li>
+            <li class="item">
+              <div class="item-title"></div>
+              <a class="item-link" href="" target="_blank" alt=""></a>
+            </li>
+            <li class="item">
+              <div class="item-title"></div>
+              <a class="item-link" href="" target="_blank" alt=""></a>
+            </li>
+            <li class="item">
+              <div class="item-title"></div>
+              <a class="item-link" href="" target="_blank" alt=""></a>
+            </li>
+            <li class="item">
+              <div class="item-title"></div>
+              <a class="item-link" href="" target="_blank" alt=""></a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="theme">
+          <h2 class="title-theme">Jest</h2>
+          <ul class="list">
+            <li class="item">
+              <div class="item-title">Jest игнорировать или исключать файл/функцию/инструкцию</div>
+              <a class="item-link" href="https://codewithhugo.com/jest-exclude-coverage/" target="_blank"
+                alt="">https://codewithhugo.com/jest-exclude-coverage/</a>
+            </li>
+            <li class="item">
+              <div class="item-title">Configuring Jest</div>
+              <a class="item-link" href="https://jestjs.io/docs/configuration" target="_blank"
+                alt="">https://jestjs.io/docs/configuration</a>
+            </li>
+            <li class="item">
+              <div class="item-title">Typescript Jest</div>
+              <a class="item-link" href="https://basarat.gitbook.io/typescript/intro-1/jest" target="_blank"
+                alt="">https://basarat.gitbook.io/typescript/intro-1/jest</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="theme">
+          <h2 class="title-theme">Полезные или красивые библиотеки</h2>
+          <ul class="list">
+            <li class="item">
+              <div class="item-title">Framer Motion</div>
+              <a class="item-link" href="https://www.framer.com/motion/" target="_blank"
+                alt="">https://www.framer.com/motion/</a>
+            </li>
+            <li class="item">
+              <div class="item-title"></div>
+              <a class="item-link" href="" target="_blank" alt=""></a>
+            </li>
+            <li class="item">
+              <div class="item-title"></div>
+              <a class="item-link" href="" target="_blank" alt=""></a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="theme">
+          <h2 class="title-theme">Typescript</h2>
+          <ul class="list">
+            <li class="item">
+              <div class="item-title">Глубокое погружение в typescript</div>
+              <a class="item-link" href="https://basarat.gitbook.io/typescript/" target="_blank"
+                alt="">https://basarat.gitbook.io/typescript/</a>
+            </li>
+            <li class="item">
+              <div class="item-title"></div>
+              <a class="item-link" href="" target="_blank" alt=""></a>
+            </li>
+            <li class="item">
+              <div class="item-title"></div>
+              <a class="item-link" href="" target="_blank" alt=""></a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="theme">
+          <h2 class="title-theme">Проектирование frontend-приложений</h2>
+          <ul class="list">
+            <li class="item">
+              <div class="item-title">Feature-Sliced Design (FSD)</div>
+              <a class="item-link" href="https://feature-sliced.design/ru/docs" target="_blank"
+                alt="">https://feature-sliced.design/ru/docs</a>
+              <div class="item-description">Feature-Sliced Design (FSD) — это архитектурная методология для
+                проектирования frontend-приложений. Проще говоря, это свод правил и соглашений по организации кода.
+                Главная цель методологии — сделать проект понятным и структурированным, особенно в условиях регулярного
+                изменения требований бизнеса.</div>
+            </li>
+            <li class="item">
+              <div class="item-title"></div>
+              <a class="item-link" href="" target="_blank" alt=""></a>
+            </li>
+            <li class="item">
+              <div class="item-title"></div>
+              <a class="item-link" href="" target="_blank" alt=""></a>
+            </li>
+            <li class="item">
+              <div class="item-title"></div>
+              <a class="item-link" href="" target="_blank" alt=""></a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="theme">
+          <h2 class="title-theme"></h2>
+          <ul class="list">
+            <li class="item">
+              <div class="item-title"></div>
+              <a class="item-link" href="" target="_blank" alt=""></a>
+            </li>
+            <li class="item">
+              <div class="item-title"></div>
+              <a class="item-link" href="" target="_blank" alt=""></a>
+            </li>
+            <li class="item">
+              <div class="item-title"></div>
+              <a class="item-link" href="" target="_blank" alt=""></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div id="eva">
+      <div class="tab-wrapper">
+        <div class="theme">
+          <h2 class="title-theme">Линукс</h2>
+          <ul class="list">
+            <li class="item">
+              <div class="item-title">Линукс для начинающих от Гоша Дударь (12 уроков)</div>
+              <a class="item-link" href="https://www.youtube.com/playlist?list=PL0lO_mIqDDFUwVWvVitxG2oXA6a-Nq-Qq"
+                target="_blank" alt="">
+                https://www.youtube.com/playlist?list=PL0lO_mIqDDFUwVWvVitxG2oXA6a-Nq-Qq
+              </a>
+            </li>
+            <li class="item">
+              <div class="item-title"></div>
+              <a class="item-link" href="" target="_blank" alt=""></a>
+            </li>
+            <li class="item">
+              <div class="item-title"></div>
+              <a class="item-link" href="" target="_blank" alt=""></a>
+            </li>
+          </ul>
+        </div>
+        <div class="theme">
+          <h2 class="title-theme">DevOps</h2>
+          <ul class="list">
+            <li class="item">
+              <div class="item-title">Начинающий девопс</div>
+              <a class="item-link" href="https://devops.org.ru/" target="_blank" alt="">https://devops.org.ru/</a>
+            </li>
+            <li class="item">
+              <div class="item-title">Гитхаб девопс чат с чего начать</div>
+              <a class="item-link" href="https://github.com/telegram-ru/devops_chats" target="_blank"
+                alt="">https://github.com/telegram-ru/devops_chats</a>
+            </li>
+            <li class="item">
+              <div class="item-title"></div>
+              <a class="item-link" href="" target="_blank" alt=""></a>
+            </li>
+          </ul>
+        </div>
+        <div class="theme">
+          <h2 class="title-theme">Docker</h2>
+          <ul class="list">
+            <li class="item">
+              <div class="item-title">Всё что нужно знать чтобы начать работать с Docker, все основы в одном уроке (46
+                минут)</div>
+              <a class="item-link" href="https://www.youtube.com/watch?v=I18TNwZ2Nqg&t=2464s" target="_blank" alt="">
+                https://www.youtube.com/watch?v=I18TNwZ2Nqg&t=2464s
+              </a>
+            </li>
+            <li class="item">
+              <div class="item-title"></div>
+              <a class="item-link" href="" target="_blank" alt=""></a>
+            </li>
+            <li class="item">
+              <div class="item-title"></div>
+              <a class="item-link" href="" target="_blank" alt=""></a>
+            </li>
+            <li class="item">
+              <div class="item-title">Шпаргалка по докер и не только</div>
+              <a class="item-link" href="https://devops.org.ru/docker-summary#d3" target="_blank" alt="">
+                https://devops.org.ru/docker-summary#d3</a>
+            </li>
+            <li class="item">
+              <div class="item-title">Докер за 5 часов от RomNero</div>
+              <a class="item-link" href="https://www.youtube.com/watch?v=O8N1lvkIjig" target="_blank" alt="">
+                https://www.youtube.com/watch?v=O8N1lvkIjig
+              </a>
+            </li>
+            <li class="item">
+              <div class="item-title">Докер плейлист от RomNero</div>
+              <a class="item-link" href="https://www.youtube.com/playlist?list=PLqVeG_R3qMSwjnkMUns_Yc4zF_PtUZmB-"
+                target="_blank" alt="">
+                https://www.youtube.com/playlist?list=PLqVeG_R3qMSwjnkMUns_Yc4zF_PtUZmB-
+              </a>
+            </li>
+            <li class="item">
+              <div class="item-title">Докер для начинающих от Гоша Дударь</div>
+              <a class="item-link" href="https://www.youtube.com/playlist?list=PL0lO_mIqDDFX1c0JHogP5YuZdOVawoepS"
+                target="_blank" alt="">
+                https://www.youtube.com/playlist?list=PL0lO_mIqDDFX1c0JHogP5YuZdOVawoepS
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="theme">
+          <h2 class="title-theme">Github</h2>
+          <ul class="list">
+            <li class="item">
+              <div class="item-title">Генерация ssh ключей для github</div>
+              <a class="item-link" href="https://bogdanov-blog.ru/generatsiya-ssh-klyuchej-dlya-github/" target="_blank"
+                alt="">
+                https://bogdanov-blog.ru/generatsiya-ssh-klyuchej-dlya-github/</a>
+            </li>
+            <li class="item">
+              <div class="item-title"></div>
+              <a class="item-link" href="" target="_blank" alt=""></a>
+            </li>
+            <li class="item">
+              <div class="item-title"></div>
+              <a class="item-link" href="" target="_blank" alt=""></a>
+            </li>
+          </ul>
+        </div>
+
+
+
+        <div class="theme">
+          <h2 class="title-theme"></h2>
+          <ul class="list">
+            <li class="item">
+              <div class="item-title"></div>
+              <a class="item-link" href="" target="_blank" alt=""></a>
+            </li>
+            <li class="item">
+              <div class="item-title"></div>
+              <a class="item-link" href="" target="_blank" alt=""></a>
+            </li>
+            <li class="item">
+              <div class="item-title"></div>
+              <a class="item-link" href="" target="_blank" alt=""></a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="theme">
+          <h2 class="title-theme"></h2>
+          <ul class="list">
+            <li class="item">
+              <div class="item-title"></div>
+              <a class="item-link" href="" target="_blank" alt=""></a>
+            </li>
+            <li class="item">
+              <div class="item-title"></div>
+              <a class="item-link" href="" target="_blank" alt=""></a>
+            </li>
+            <li class="item">
+              <div class="item-title"></div>
+              <a class="item-link" href="" target="_blank" alt=""></a>
+            </li>
+          </ul>
+        </div>
+
+
+      </div>
+    </div>
   </div>
-  <div class="theme">
-    <h2 class="title-theme">DevOps</h2>
-    <ul class="list">
-      <li class="item">
-        <div class="item-title">Начинающий девопс</div>
-        <a class="item-link" href="https://devops.org.ru/" target="_blank" alt="">https://devops.org.ru/</a>
-      </li>
-      <li class="item">
-        <div class="item-title"></div>
-        <a class="item-link" href="" target="_blank" alt=""></a>
-      </li>
-      <li class="item">
-        <div class="item-title"></div>
-        <a class="item-link" href="" target="_blank" alt=""></a>
-      </li>
-    </ul>
-  </div>
-  <div class="theme">
-    <h2 class="title-theme">Docker</h2>
-    <ul class="list">
-      <li class="item">
-        <div class="item-title">Всё что нужно знать чтобы начать работать с Docker, все основы в одном уроке (46 минут)</div>
-        <a class="item-link" href="https://www.youtube.com/watch?v=I18TNwZ2Nqg&t=2464s" target="_blank" alt="">
-          https://www.youtube.com/watch?v=I18TNwZ2Nqg&t=2464s
-        </a>
-      </li>
-      <li class="item">
-        <div class="item-title"></div>
-        <a class="item-link" href="" target="_blank" alt=""></a>
-      </li>
-      <li class="item">
-        <div class="item-title"></div>
-        <a class="item-link" href="" target="_blank" alt=""></a>
-      </li>
-      <li class="item">
-        <div class="item-title">Шпаргалка по докер и не только</div>
-        <a class="item-link" href="https://devops.org.ru/docker-summary#d3" target="_blank" alt="">
-          https://devops.org.ru/docker-summary#d3</a>
-      </li>
-      <li class="item">
-        <div class="item-title">Докер за 5 часов от RomNero</div>
-        <a class="item-link" href="https://www.youtube.com/watch?v=O8N1lvkIjig" target="_blank" alt="">
-          https://www.youtube.com/watch?v=O8N1lvkIjig
-        </a>
-      </li>
-      <li class="item">
-        <div class="item-title">Докер плейлист от RomNero</div>
-        <a class="item-link" href="https://www.youtube.com/playlist?list=PLqVeG_R3qMSwjnkMUns_Yc4zF_PtUZmB-" target="_blank" alt="">
-          https://www.youtube.com/playlist?list=PLqVeG_R3qMSwjnkMUns_Yc4zF_PtUZmB-
-        </a>
-      </li>
-      <li class="item">
-        <div class="item-title">Докер для начинающих от Гоша Дударь</div>
-        <a class="item-link" href="https://www.youtube.com/playlist?list=PL0lO_mIqDDFX1c0JHogP5YuZdOVawoepS" target="_blank" alt="">
-          https://www.youtube.com/playlist?list=PL0lO_mIqDDFX1c0JHogP5YuZdOVawoepS
-        </a>
-      </li>
-    </ul>
-  </div>
-  <div class="theme">
-    <h2 class="title-theme">Github</h2>
-    <ul class="list">
-      <li class="item">
-        <div class="item-title">Генерация ssh ключей для github</div>
-        <a class="item-link" href="https://bogdanov-blog.ru/generatsiya-ssh-klyuchej-dlya-github/" target="_blank" alt="">
-          https://bogdanov-blog.ru/generatsiya-ssh-klyuchej-dlya-github/</a>
-      </li>
-      <li class="item">
-        <div class="item-title"></div>
-        <a class="item-link" href="" target="_blank" alt=""></a>
-      </li>
-      <li class="item">
-        <div class="item-title"></div>
-        <a class="item-link" href="" target="_blank" alt=""></a>
-      </li>
-    </ul>
-  </div>
-
-
-
-  <div class="theme">
-    <h2 class="title-theme"></h2>
-    <ul class="list">
-      <li class="item">
-        <div class="item-title"></div>
-        <a class="item-link" href="" target="_blank" alt=""></a>
-      </li>
-      <li class="item">
-        <div class="item-title"></div>
-        <a class="item-link" href="" target="_blank" alt=""></a>
-      </li>
-      <li class="item">
-        <div class="item-title"></div>
-        <a class="item-link" href="" target="_blank" alt=""></a>
-      </li>
-    </ul>
-  </div>
-
-
-
-
 </body>
+
 </html>
